@@ -6,11 +6,11 @@ $LOAD_PATH.push File.expand_path('../lib', __FILE__)
 Gem::Specification.new do |s|
   s.name        = 'rswag-ui'
   s.version     = ENV['TRAVIS_TAG'] || '0.0.0'
-  s.authors     = ['Richie Morris', 'Greg Myers', 'Jay Danielian']
-  s.email       = ['domaindrivendev@gmail.com']
-  s.homepage    = 'https://github.com/rswag/rswag'
-  s.summary     = 'A Rails Engine that includes swagger-ui and powers it from configured Swagger endpoints'
-  s.description = 'Expose beautiful API documentation, powered by Swagger JSON endpoints, including a UI to explore and test operations'
+  s.authors     = ['Richie Morris', 'Greg Myers', 'Jay Danielian', 'Mia North']
+  s.email       = ['mnorth@salesforce.com']
+  s.homepage    = 'https://github.com/mia-n/rswag'
+  s.summary     = 'Gem of Mia North\'s fork of rswag'
+  s.description = 'Open up your API to the phenomenal Swagger ecosystem by exposing Swagger files, that describe your service, as JSON endpoints'
   s.license     = 'MIT'
 
   s.files = Dir.glob('{lib,node_modules}/**/*') + ['MIT-LICENSE', 'Rakefile' ]

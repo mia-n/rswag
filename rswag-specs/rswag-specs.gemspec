@@ -6,11 +6,11 @@ $LOAD_PATH.push File.expand_path('lib', __dir__)
 Gem::Specification.new do |s|
   s.name        = 'rswag-specs'
   s.version     = ENV['TRAVIS_TAG'] || '0.0.0'
-  s.authors     = ['Richie Morris', 'Greg Myers', 'Jay Danielian']
-  s.email       = ['domaindrivendev@gmail.com']
-  s.homepage    = 'https://github.com/rswag/rswag'
-  s.summary     = 'A Swagger-based DSL for rspec-rails & accompanying rake task for generating Swagger files'
-  s.description = 'Simplify API integration testing with a succinct rspec DSL and generate Swagger files directly from your rspecs'
+  s.authors     = ['Richie Morris', 'Greg Myers', 'Jay Danielian', 'Mia North']
+  s.email       = ['mnorth@salesforce.com']
+  s.homepage    = 'https://github.com/mia-n/rswag'
+  s.summary     = 'Gem of Mia North\'s fork of rswag'
+  s.description = 'Open up your API to the phenomenal Swagger ecosystem by exposing Swagger files, that describe your service, as JSON endpoints'
   s.license     = 'MIT'
 
   s.files = Dir['{lib}/**/*'] + ['MIT-LICENSE', 'Rakefile']
