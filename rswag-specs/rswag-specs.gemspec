@@ -4,7 +4,7 @@ $LOAD_PATH.push File.expand_path('lib', __dir__)
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = 'mn-rswag-specs'
+  s.name        = 'rswag-specs'
   s.version     = ENV['TRAVIS_TAG'] || '0.0.0'
   s.authors     = ['Richie Morris', 'Greg Myers', 'Jay Danielian', 'Mia North']
   s.email       = ['mnorth@salesforce.com']
