@@ -150,7 +150,7 @@ module Rswag
           non_mime_type_examples = {}
           examples.each do |key, value|
             if mime_list.include? key
-              set_mime_type_content!(target_node, key, :examples, value)
+              set_mime_type_content!(target_node, key, :example, value)
             else
               non_mime_type_examples[key] = value
             end
