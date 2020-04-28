@@ -146,7 +146,16 @@ module Rswag
         if example
           set_mime_list_contents!(target_node, mime_list, :example, example)
         elsif examples
-          set_mime_list_contents!(target_node, mime_list, :examples, examples)
+          #check if examples contains mime_types from swagger2.0 response example style
+          non_mime_type_examples = {}
+          examples.each do |key, value|
+            if mime_list.include? key
+              set_mime_type_content!(target_node, key, :examples, value)
+            else
+              non_mime_type_examples[key] = value
+            end
+          end
+          set_mime_list_contents!(target_node, mime_list, :examples, non_mime_type_examples)
         end
       end
 
