@@ -155,7 +155,9 @@ module Rswag
               non_mime_type_examples[key] = value
             end
           end
-          set_mime_list_contents!(target_node, mime_list, :examples, non_mime_type_examples)
+          unless non_mime_type_examples.empty?
+            set_mime_list_contents!(target_node, mime_list, :examples, non_mime_type_examples)
+          end
         end
       end
 
